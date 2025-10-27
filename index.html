@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollz Designs - Muebles Artesanales en Madera | Ibarra, Ecuador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#e6f5e1',
+                            500: '#4a7c59',
+                            700: '#2e5338'
+                        },
+                        secondary: {
+                            100: '#f5eee6',
+                            500: '#8b5a2b',
+                            700: '#5a3a1c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-primary-100 font-sans text-secondary-700">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen-80 flex items-center justify-center bg-secondary-500 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <img src="http://static.photos/nature/1200x630/42" alt="Taller de carpintería artesanal" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Hollz Designs</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Muebles artesanales y tablas de picar en madera hechos en Ibarra, Ecuador</p>
+            <a href="#contacto" class="bg-primary-500 hover:bg-primary-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center">
+                <i data-feather="message-circle" class="mr-2"></i> Encarga tu pieza
+            </a>
+        </div>
+    </section>
+
+    <!-- Nuestro Trabajo -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/workspace/1024x576/10" alt="Taller de carpintería" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-secondary-700 mb-6">Nuestro trabajo</h2>
+                    <p class="text-lg mb-4">En Hollz Designs, cada pieza cuenta una historia. Trabajamos la madera con dedicación y respeto, transformando materias primas locales en objetos que perduran.</p>
+                    <p class="text-lg mb-6">Nuestros muebles y tablas de picar son creados completamente a mano en nuestro taller de Ibarra, utilizando técnicas tradicionales combinadas con un diseño contemporáneo.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-primary-100 p-4 rounded-full">
+                            <i data-feather="compass" class="text-primary-500"></i>
+                        </div>
+                        <p class="text-secondary-700">Materiales 100% locales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colección Destacada -->
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-secondary-700 mb-12">Colección destacada</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-primary-100 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/food/1024x576/5" alt="Tabla de picar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary-700 mb-2">Tablas de picar</h3>
+                        <p class="text-secondary-700 mb-4">Hechas en madera de guayacán, perfectas para tu cocina y presentaciones gourmet.</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 font-medium">
+                            Ver más <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="bg-primary-100 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/indoor/1024x576/7" alt="Mueble auxiliar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary-700 mb-2">Muebles auxiliares</h3>
+                        <p class="text-secondary-700 mb-4">Pequeños muebles funcionales que añaden calidez y estilo a cualquier espacio.</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 font-medium">
+                            Ver más <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="bg-primary-100 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/workspace/1024x576/8" alt="Juego de tablas" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary-700 mb-2">Juego de tablas</h3>
+                        <p class="text-secondary-700 mb-4">Sets completos para servir con estilo, perfectos para reuniones familiares.</p>
+                        <a href="#" class="inline-flex items-center text-primary-500 font-medium">
+                            Ver más <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="py-16 bg-secondary-500 text-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegirnos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="tool" class="text-white"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Hecho a mano</h3>
+                    <p class="text-sm">Cada pieza es única, creada con técnicas artesanales</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="tree" class="text-white"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Madera natural</h3>
+                    <p class="text-sm">Utilizamos maderas locales de alta calidad y durabilidad</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="map-pin" class="text-white"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Diseño local</h3>
+                    <p class="text-sm">Creaciones inspiradas en nuestra identidad ibarreña</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="shield" class="text-white"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Calidad duradera</h3>
+                    <p class="text-sm">Piezas diseñadas para durar generaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios/Galería -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-secondary-700 mb-12">Nuestras creaciones</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="http://static.photos/food/640x360/1" alt="Tabla de picar" class="rounded-lg shadow-md w-full h-64 object-cover">
+                <img src="http://static.photos/indoor/640x360/2" alt="Mueble auxiliar" class="rounded-lg shadow-md w-full h-64 object-cover">
+                <img src="http://static.photos/workspace/640x360/3" alt="Detalle de madera" class="rounded-lg shadow-md w-full h-64 object-cover">
+                <img src="http://static.photos/indoor/640x360/4" alt="Tabla de servir" class="rounded-lg shadow-md w-full h-64 object-cover">
+                <img src="http://static.photos/workspace/640x360/6" alt="Proceso artesanal" class="rounded-lg shadow-md w-full h-64 object-cover">
+                <img src="http://static.photos/food/640x360/9" alt="Set de tablas" class="rounded-lg shadow-md w-full h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 bg-primary-700 text-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Visítanos en Ibarra</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Información de contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <i data-feather="map-pin"></i>
+                                <p>Calle Imbabura 123, Ibarra, Ecuador</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i data-feather="phone"></i>
+                                <p>+593 99 123 4567</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i data-feather="mail"></i>
+                                <p>hola@hollzdesigns.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Horario de atención</h3>
+                        <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition">
+                                <i data-feather="twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="nombre" class="block mb-2">Nombre</label>
+                            <input type="text" id="nombre" class="w-full px-4 py-2 rounded bg-primary-500 border border-primary-300 placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Correo electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-primary-500 border border-primary-300 placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block mb-2">Mensaje</label>
+                            <textarea id="mensaje" rows="4" class="w-full px-4 py-2 rounded bg-primary-500 border border-primary-300 placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-secondary-500 hover:bg-secondary-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center">
+                            <i data-feather="send" class="mr-2"></i> Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,101 +1,98 @@
-   <script id="wp-block-template-skip-link-js-after">
-      (function () {
-        var skipLinkTarget = document.querySelector("main"),
-          sibling,
-          skipLinkTargetID,
-          skipLink;
+<script id="wp-block-template-skip-link-js-after">
+  (function () {
+    var skipLinkTarget = document.querySelector("main"),
+      sibling,
+      skipLinkTargetID,
+      skipLink;
 
-        // Early exit if a skip-link target can't be located.
-        if (!skipLinkTarget) {
-          return;
-        }
+    // Early exit if a skip-link target can't be located.
+    if (!skipLinkTarget) {
+      return;
+    }
 
-        /*
-         * Get the site wrapper.
-         * The skip-link will be injected in the beginning of it.
-         */
-        sibling = document.querySelector(".wp-site-blocks");
+    /*
+     * Get the site wrapper.
+     * The skip-link will be injected in the beginning of it.
+     */
+    sibling = document.querySelector(".wp-site-blocks");
 
-        // Early exit if the root element was not found.
-        if (!sibling) {
-          return;
-        }
+    // Early exit if the root element was not found.
+    if (!sibling) {
+      return;
+    }
 
-        // Get the skip-link target's ID, and generate one if it doesn't exist.
-        skipLinkTargetID = skipLinkTarget.id;
-        if (!skipLinkTargetID) {
-          skipLinkTargetID = "wp--skip-link--target";
-          skipLinkTarget.id = skipLinkTargetID;
-        }
+    // Get the skip-link target's ID, and generate one if it doesn't exist.
+    skipLinkTargetID = skipLinkTarget.id;
+    if (!skipLinkTargetID) {
+      skipLinkTargetID = "wp--skip-link--target";
+      skipLinkTarget.id = skipLinkTargetID;
+    }
 
-        // Create the skip link.
-        skipLink = document.createElement("a");
-        skipLink.classList.add("skip-link", "screen-reader-text");
-        skipLink.href = "#" + skipLinkTargetID;
-        skipLink.innerHTML = "Skip to content";
+    // Create the skip link.
+    skipLink = document.createElement("a");
+    skipLink.classList.add("skip-link", "screen-reader-text");
+    skipLink.href = "#" + skipLinkTargetID;
+    skipLink.innerHTML = "Skip to content";
 
-        // Inject the skip link.
-        sibling.parentElement.insertBefore(skipLink, sibling);
-      })();
-    </script>
-    <script id="gutenverse-frontend-event-js-extra">
-      var GutenverseFrontendConfig = {
-        wpjson_url: "https:\/\/fse.jegtheme.com\/woodzone\/wp-json\/",
-        wpjson_nonce: "54d38c449d",
-        wpjson_endpoint:
-          "https:\/\/fse.jegtheme.com\/woodzone\/wp-admin\/admin-ajax.php?action=rest-nonce",
-        framework_asset:
-          "https:\/\/fse.jegtheme.com\/woodzone\/wp-content\/plugins\/gutenverse-form\/lib\/framework\/assets\/",
-        framework_version: "2.1.0",
-        image_placeholder:
-          "https:\/\/fse.jegtheme.com\/woodzone\/wp-content\/plugins\/gutenverse-form\/lib\/framework\/assets\/img\/img-placeholder.jpg",
-      };
-      var GutenverseData = {
-        postId: "47",
-        homeUrl: "https:\/\/fse.jegtheme.com\/woodzone",
-        query: { q_search: null },
-        settingsData: [],
-        activePlugins: [
-          "wordpress-importer\/wordpress-importer.php",
-          "wordfence\/wordfence.php",
-          "php-server-configuration\/php-info-nsi.php",
-          "wp-file-manager\/file_folder_manager.php",
-          "ajegstudio-server\/ajegstudio-server.php",
-          "gutenverse\/gutenverse.php",
-          "gutenverse-form\/gutenverse-form.php",
-          "gutenverse-helper\/gutenverse-helper.php",
-          "wppusher\/wppusher.php",
-          "ns-cloner-site-copier\/ns-cloner.php",
-          "wp-svg-images\/wp-svg-images.php",
-          "duplicate-post\/duplicate-post.php",
-        ],
-        featuredImage:
-          "https:\/\/fse.jegtheme.com\/woodzone\/wp-content\/plugins\/gutenverse-form\/lib\/framework\/assets\/img\/img-placeholder.jpg",
-        breakPoints: { Tablet: 1024, Mobile: 767 },
-      };
-      var GutenverseFormValidationData = {
-        data: [],
-        missingLabel:
-          "Form action is missing, please assign form action into this form.",
-        isAdmin: "",
-      };
-    </script>
-    <script
-      src="wp-content/plugins/gutenverse-form/lib/framework/assets/js/corefrontend.js"
-      id="gutenverse-frontend-event-js"
-    ></script>
-    <script
-      src="wp-content/plugins/gutenverse-form/assets/js/frontend.js"
-      id="gutenverse-form-frontend-js"
-    ></script>
-    <script
-      src="wp-includes/js/dist/vendor/lodash.min.js"
-      id="lodash-js"
-    ></script>
-    <script id="lodash-js-after">
-      window.lodash = _.noConflict();
-    </script>
-    <script
-      src="wp-content/plugins/gutenverse/assets/js/frontend.js"
-      id="gutenverse-frontend-js"
-    ></script>
+    // Inject the skip link.
+    sibling.parentElement.insertBefore(skipLink, sibling);
+  })();
+</script>
+<script id="gutenverse-frontend-event-js-extra">
+  var GutenverseFrontendConfig = {
+    wpjson_url: "https:\/\/fse.jegtheme.com\/woodzone\/wp-json\/",
+    wpjson_nonce: "54d38c449d",
+    wpjson_endpoint:
+      "https:\/\/fse.jegtheme.com\/woodzone\/wp-admin\/admin-ajax.php?action=rest-nonce",
+    framework_asset:
+      "https:\/\/fse.jegtheme.com\/woodzone\/assets\/plugins\/gutenverse-form\/lib\/framework\/assets\/",
+    framework_version: "2.1.0",
+    image_placeholder:
+      "https:\/\/fse.jegtheme.com\/woodzone\/assets\/plugins\/gutenverse-form\/lib\/framework\/assets\/img\/img-placeholder.jpg",
+  };
+  var GutenverseData = {
+    postId: "47",
+    homeUrl: "https:\/\/fse.jegtheme.com\/woodzone",
+    query: { q_search: null },
+    settingsData: [],
+    activePlugins: [
+      "wordpress-importer\/wordpress-importer.php",
+      "wordfence\/wordfence.php",
+      "php-server-configuration\/php-info-nsi.php",
+      "wp-file-manager\/file_folder_manager.php",
+      "ajegstudio-server\/ajegstudio-server.php",
+      "gutenverse\/gutenverse.php",
+      "gutenverse-form\/gutenverse-form.php",
+      "gutenverse-helper\/gutenverse-helper.php",
+      "wppusher\/wppusher.php",
+      "ns-cloner-site-copier\/ns-cloner.php",
+      "wp-svg-images\/wp-svg-images.php",
+      "duplicate-post\/duplicate-post.php",
+    ],
+    featuredImage:
+      "https:\/\/fse.jegtheme.com\/woodzone\/assets\/plugins\/gutenverse-form\/lib\/framework\/assets\/img\/img-placeholder.jpg",
+    breakPoints: { Tablet: 1024, Mobile: 767 },
+  };
+  var GutenverseFormValidationData = {
+    data: [],
+    missingLabel:
+      "Form action is missing, please assign form action into this form.",
+    isAdmin: "",
+  };
+</script>
+<script
+  src="assets/plugins/gutenverse-form/lib/framework/assets/js/corefrontend.js"
+  id="gutenverse-frontend-event-js"
+></script>
+<script
+  src="assets/plugins/gutenverse-form/assets/js/frontend.js"
+  id="gutenverse-form-frontend-js"
+></script>
+<script src="assets/js/dist/vendor/lodash.min.js" id="lodash-js"></script>
+<script id="lodash-js-after">
+  window.lodash = _.noConflict();
+</script>
+<script
+  src="assets/plugins/gutenverse/assets/js/frontend.js"
+  id="gutenverse-frontend-js"
+></script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es" }}">
+
+  {%- include head.html -%}
+
+  <body
+    class="error404 wp-embed-responsive"
+    cz-shortcut-listen="true"
+  >
+    <div class="wp-site-blocks">
+      <div class="guten-KtIdRv guten-post-content guten-element">
+        
+        {%- include header.html -%}
+
+        {{ content }}
+
+        {% include footer.html %}
+
+      </div>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

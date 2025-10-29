@@ -17,12 +17,6 @@
   <link
     rel="alternate"
     type="application/rss+xml"
-    title="Woodzone &raquo; Feed"
-    href="feed/index.html"
-  />
-  <link
-    rel="alternate"
-    type="application/rss+xml"
     title="Woodzone &raquo; Comments Feed"
     href="comments/feed/index.html"
   />
@@ -68,12 +62,49 @@
     href="assets/uploads/sites/19/gutenverse/css/gutenverse-template-blank-canvas-847978.css"
     media="all"
   />
-  <link
-    rel="stylesheet"
-    id="gutenverse-generated-content-css"
-    href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-47-847978.css"
-    media="all"
-  />
+  {% if page.layout == "services" %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-59-847978.css"
+      media="all"
+    />
+  {% elsif page.layout == "page" %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-48-847978.css"
+      media="all"
+    />
+  {% elsif page.layout == "proyect" %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-60-847978.css"
+      media="all"
+    />
+  {% elsif page.layout == "proyects" %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-61-847978.css"
+      media="all"
+    />
+  {% elsif page.layout == "team" %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-62-847978.css"
+      media="all"
+    />
+  {% else %}
+    <link
+      rel="stylesheet"
+      id="gutenverse-generated-content-css"
+      href="assets/uploads/sites/19/gutenverse/css/gutenverse-content-47-847978.css"
+      media="all"
+    />
+  {% endif %}
   <link
     rel="stylesheet"
     id="gutenverse-google-font-css"

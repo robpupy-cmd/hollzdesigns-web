@@ -81,11 +81,11 @@
   };
 </script>
 <script
-  src="assets/plugins/gutenverse-form/lib/framework/assets/js/corefrontend.js"
+  src="{{ '/assets/plugins/gutenverse-form/lib/framework/assets/js/corefrontend.js' | relative_url }}"
   id="gutenverse-frontend-event-js"
 ></script>
 <script
-  src="assets/plugins/gutenverse-form/assets/js/frontend.js"
+  src="{{ '/assets/plugins/gutenverse-form/assets/js/frontend.js' | relative_url }}"
   id="gutenverse-form-frontend-js"
 ></script>
 <script src="assets/js/dist/vendor/lodash.min.js" id="lodash-js"></script>
@@ -93,6 +93,6 @@
   window.lodash = _.noConflict();
 </script>
 <script
-  src="assets/plugins/gutenverse/assets/js/frontend.js"
+  src="{{ '/assets/plugins/gutenverse/assets/js/frontend.js' | relative_url }}"
   id="gutenverse-frontend-js"
 ></script>

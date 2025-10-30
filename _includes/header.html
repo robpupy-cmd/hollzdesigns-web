@@ -38,37 +38,29 @@
                     <div
                       class="guten-element guten-icon-list guten-aE5vVo inline-icon-list"
                     >
-                      <div
-                        class="guten-element guten-icon-list-item guten-Yw6aUW"
-                      >
-                        <a id="guten-Yw6aUW" href="index.html#"
+                      <div class="guten-element guten-icon-list-item guten-Yw6aUW">
+                        <a id="guten-Yw6aUW" href="{{ '#' | relative_url }}"
                           ><i class="gtn gtn-facebook-light"></i
                           ><span class="list-text"></span
                         ></a>
                       </div>
 
-                      <div
-                        class="guten-element guten-icon-list-item guten-RTYWMR"
-                      >
-                        <a id="guten-RTYWMR" href="index.html#"
+                      <div class="guten-element guten-icon-list-item guten-RTYWMR">
+                        <a id="guten-RTYWMR" href="{{ '#' | relative_url }}"
                           ><i class="fab fa-x-twitter"></i
                           ><span class="list-text"></span
                         ></a>
                       </div>
 
-                      <div
-                        class="guten-element guten-icon-list-item guten-YV6pTb"
-                      >
-                        <a id="guten-YV6pTb" href="index.html#"
+                      <div class="guten-element guten-icon-list-item guten-YV6pTb">
+                        <a id="guten-YV6pTb" href="{{ '#' | relative_url }}"
                           ><i class="fab fa-youtube"></i
                           ><span class="list-text"></span
                         ></a>
                       </div>
 
-                      <div
-                        class="guten-element guten-icon-list-item guten-amSGOr"
-                      >
-                        <a id="guten-amSGOr" href="index.html#"
+                      <div class="guten-element guten-icon-list-item guten-amSGOr">
+                        <a id="guten-amSGOr" href="{{ '#' | relative_url }}"
                           ><i class="gtn gtn-instagram-1-light"></i
                           ><span class="list-text"></span
                         ></a>
@@ -97,7 +89,7 @@
                           loading="lazy"
                           decoding="async"
                           class="gutenverse-image-box-filled"
-                          src="assets/images/2025/10/logo-white.png"
+                          src="{{ '/assets/images/2025/10/logo-white.png' | relative_url }}"
                           height="108"
                           width="302"
                         />
@@ -127,79 +119,79 @@
                           <ul id="menu-woodzone" class="gutenverse-menu">
                             <li
                               id="menu-item-67"
-                              class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-67"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67 {% if page.url == '/' or page.url == '' %}current-menu-item{% endif %}"
                             >
-                              <a href="index.html" aria-current="page">Inicio</a>
+                              <a href="{{ '/' | relative_url }}" aria-current="page">Inicio</a>
                             </li>
                             <li
                               id="menu-item-68"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68 {% if page.url == '/nosotros/' or page.url == '/nosotros' or page.url contains '/nosotros' %}current-menu-item{% endif %}"
                             >
-                              <a href="about.html">Nosotros</a>
+                              <a href="{{ '/nosotros' | relative_url }}">Nosotros</a>
                             </li>
                             <li
                               id="menu-item-69"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69 {% if page.url == '/servicios/' or page.url == '/servicios' or page.url contains '/servicios' %}current-menu-item{% endif %}"
                             >
-                              <a href="services.html">Servicios</a>
+                              <a href="{{ '/servicios' | relative_url }}">Servicios</a>
                             </li>
                             <li
                               id="menu-item-353"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-353"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-353 {% if page.url contains 'proyect' or page.url contains 'proyecto' or page.url contains '/proyectos' %}current-menu-item{% endif %}"
                             >
-                              <a href="index.html#">Proyectos</a>
+                              <a href="{{ 'proyectos' | relative_url }}">Proyectos</a>
                               <ul class="sub-menu">
                                 <li
                                   id="menu-item-70"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"
++                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70 {% if page.url == '/proyectos/' or page.url == '/proyectos' or page.url contains '/proyectos' %}current-menu-item{% endif %}"
                                 >
-                                  <a href="proyects.html">Proyectos</a>
+                                  <a href="{{ '/proyectos' | relative_url }}">Proyectos</a>
                                 </li>
                                 <li
                                   id="menu-item-71"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"
++                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71 {% if page.url == '/proyect-one.html' or page.url contains 'proyect-one' %}current-menu-item{% endif %}"
                                 >
-                                  <a href="proyect-one.html">Detalles del proyecto</a>
+                                  <a href="{{ '/proyect-one.html' | relative_url }}">Detalles del proyecto</a>
                                 </li>
                               </ul>
                             </li>
                             <li
                               id="menu-item-72"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72 {% if page.url contains 'team' or page.url contains 'pricing' or page.url contains 'faq' %}current-menu-item{% endif %}"
                             >
-                              <a href="index.html#">Páginas</a>
+                              <a href="{{ '/team' | relative_url }}">Páginas</a>
                               <ul class="sub-menu">
                                 <li
                                   id="menu-item-73"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"
++                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73 {% if page.url == '/team/' or page.url == '/team' or page.url contains '/team' %}current-menu-item{% endif %}"
                                 >
-                                  <a href="team.html">Nuestro carpintero</a>
+                                  <a href="{{ '/team' | relative_url }}">Nuestro carpintero</a>
                                 </li>
                                 <li
                                   id="menu-item-74"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"
++                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74 {% if page.url == '/pricing/' or page.url == '/pricing' or page.url contains '/pricing' %}current-menu-item{% endif %}"
                                 >
-                                  <a href="pricing.html">Precios</a>
+                                  <a href="{{ '/pricing' | relative_url }}">Precios</a>
                                 </li>
                                 <li
                                   id="menu-item-75"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"
++                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75 {% if page.url == '/faq/' or page.url == '/faq' or page.url contains '/faq' %}current-menu-item{% endif %}"
                                 >
-                                  <a href="faq.html">Preguntas frecuentes</a>
+                                  <a href="{{ '/faq' | relative_url }}">Preguntas frecuentes</a>
                                 </li>
                               </ul>
                             </li>
                             <li
                               id="menu-item-76"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76 {% if page.url == '/blog/' or page.url == '/blog' or page.url contains '/blog' %}current-menu-item{% endif %}"
                             >
-                              <a href="blog.html">Blog</a>
+                              <a href="{{ '/blog' | relative_url }}">Blog</a>
                             </li>
                             <li
                               id="menu-item-77"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"
++                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77 {% if page.url == '/contacto/' or page.url == '/contacto' or page.url contains '/contacto' %}current-menu-item{% endif %}"
                             >
-                              <a href="contact.html">Contacto</a>
+                              <a href="{{ '/contacto' | relative_url }}">Contacto</a>
                             </li>
                           </ul>
                         </div>
@@ -211,7 +203,7 @@
                                 class="gutenverse-nav-logo"
                                 ><img
                                   decoding="async"
-                                  src="assets/images/2025/10/logo-black.png"
+                                  src="{{ '/assets/images/2025/10/logo-black.png' | relative_url }}"
                                   alt="HOLZDESIGNS"
                               /></a>
                             </div>
@@ -232,13 +224,10 @@
                   class="wp-block-gutenverse-column guten-element guten-column guten-SQPRCa hide-tablet hide-mobile"
                 >
                   <div class="guten-column-wrapper" data-id="SQPRCa">
-                    <div
-                      class="guten-element guten-button-wrapper guten-Sg7a0K"
-                    >
-                      <a class="guten-button guten-button-sm" href="index.html#"
+                    <div class="guten-element guten-button-wrapper guten-Sg7a0K">
+                      <a class="guten-button guten-button-sm" href="{{ '#' | relative_url }}"
                         ><i class="fa-lg fas fa-phone"></i
-                        ><span>Llámanos</span></a
-                      >
+                        ><span>Llámanos</span></a>
                     </div>
                   </div>
                 </div>
